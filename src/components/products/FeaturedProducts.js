@@ -23,11 +23,8 @@ function FeaturedProducts() {
                                             <div className="img-holder">
                                                 <a href="#"><img loading="lazy" src={process.env.PUBLIC_URL + item.img} alt=""/></a>
                                             </div>
-                                            <div className="details">
+                                            <div className="caption">
                                                 <h3>{item.title}</h3>
-                                                <Link className="shop-btn" to="/shop-full-width">
-                                                    Shop Now
-                                                </Link>
                                             </div>
                                         </div>
                                     ))

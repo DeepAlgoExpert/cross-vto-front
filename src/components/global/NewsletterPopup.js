@@ -36,11 +36,10 @@ function NewsletterPopup() {
                             <img src={process.env.PUBLIC_URL + "/assets/images/newsletter.jpg"} loading="lazy" alt=""/>
                         </div>
                         <div className="details">
-                            <h4>Get 25% discount shipped to your inbox</h4>
-                            <p>
-                                Subscribe to the Azedw eCommerce newsletter to receive timely updates to your favorite
+                            <h4>
+                                Subscribe to the Styleshifter newsletter to receive timely updates to your favorite
                                 products
-                            </p>
+                            </h4>
                             <form>
                                 <div>
                                     <input type="email" placeholder="Enter your email"/>

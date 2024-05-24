@@ -1,17 +1,17 @@
 [
     {
         "id" : 1,
-        "img": "/assets/images/feature-product/img-4.jpg",
-        "title": "Spring Collection"
+        "img": "/assets/images/feature-product/before.jpg",
+        "title": "Before"
     },
     {
         "id" : 2,
-        "img": "/assets/images/feature-product/img-11.jpg",
-        "title": "Winter Collection"
+        "img": "/assets/images/feature-product/cloth.jpg",
+        "title": "Cloth"
     },
     {
         "id" : 3,
-        "img": "/assets/images/feature-product/img-7.jpg",
-        "title": "Wool sweater"
+        "img": "/assets/images/feature-product/after.png",
+        "title": "After"
     }
 ]

@@ -2,19 +2,19 @@
     {
         "id": 1,
         "img": "/assets/images/slider/slide-1.jpg",
-        "title": "Great Lookbook 2021",
-        "text": "Stylish shop"
+        "title": "VirtualFitting 2024",
+        "text": "Styleshifter"
     },
     {
         "id": 2,
         "img": "/assets/images/slider/slide-2.jpg",
-        "title": "Stylish Coat",
-        "text": "Stylish shop"
+        "title": "Photo realistic effect!",
+        "text": "Styleshifter"
     },
     {
         "id": 3,
         "img": "/assets/images/slider/slide-3.jpg",
         "title": "Trendy Collection",
-        "text": "Stylish shop"
+        "text": "Styleshifter"
     }
 ]

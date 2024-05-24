@@ -69,12 +69,6 @@ function HomeDefault({ options }) {
 
             <RecentProducts onQuickViewClick={HandelQuickViewData}/>
 
-            <Categories/>
-
-            <CtaSection/>
-
-            <BestSeller onQuickViewClick={HandelQuickViewData}/>
-
             <Instagram/>
 
             <Footer/>

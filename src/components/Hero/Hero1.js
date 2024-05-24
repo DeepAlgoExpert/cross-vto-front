@@ -48,9 +48,6 @@ function Hero1() {
                                             <h2>{item.title}</h2>
                                         </div>
                                         <div className="clearfix"/>
-                                        <div className="slide-btns">
-                                            <NavLink to="/shop-left-sidebar" className="theme-btn-s7">Shop Now</NavLink>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
