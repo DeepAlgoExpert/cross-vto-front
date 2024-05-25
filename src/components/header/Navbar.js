@@ -20,9 +20,6 @@ function Navbar({options}) {
                         <NavLink to="/">Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/body-measurement" activeClassName="current-menu-item">Mobile Tailer</NavLink>
-                    </li>
-                    <li>
                         <NavLink to="/virtualfitting-new" activeClassName="current-menu-item">Eugenie</NavLink>
                     </li>
                 </ul>

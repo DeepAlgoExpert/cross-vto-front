@@ -69,11 +69,6 @@ function HomeDefault({ options }) {
 
             <RecentProducts onQuickViewClick={HandelQuickViewData}/>
 
-            <Instagram/>
-
-            <Footer/>
-
-            <NewsletterPopup/>
         </Fragment>
     );
 }

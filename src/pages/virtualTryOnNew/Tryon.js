@@ -12,6 +12,9 @@ import FilePreview from "../../components/filepreview/filepreview.component";
 import TryOnImages from "../../components/tryon-new/tryon.component";
 import TabButtons from "../../components/tryon/tabbutton.component";
 import TabContent from "../../components/tryon/tabcontent.component";
+import FeaturedProducts from '../../components/products/FeaturedProducts';
+import VtoBlock from '../../components/vto-block/vto-block';
+import RecentProducts from '../../components/products/RecentProducts';
 
 import "./tryon.css";
 
@@ -155,131 +158,10 @@ function VirtualFittingRoom({ options }) {
     return (
         <Fragment>
             <Header options={options} />
-
-            <PageTitle name="VirtualFittingRoom"/>
-
-
-            {/* start video-section */}
-             <section className="contact-section contact-pg-section section-padding" id="tryon-video-section">
-                <div className="container-1410">
-                    <div className="row">
-                        <div className="col col-lg-10 col-lg-offset-1">
-                            <div className="video-info">
-                                <ul>
-                                    <li>
-                                        <h1></h1>
-                                        <h1>CREATE YOUR STYLE</h1>
-                                        <h2>With a help of AI</h2>
-                                    </li>
-                                    <li>
-                                        <p></p><p></p>
-                                    </li>
-                                    <li>
-                                        <h3>The first AI-powered fashion photo editor app that allows  you to change clothes on pictures, tailored to your unique style or occasion with ease</h3>
-                                    </li>
-                                    <li>
-                                        <h3>With our technology, and your unique taste, you can use your own picture to style the perfect look. Explore a wide range of styles with more versatility than ever before</h3>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="video-form-col">
-                                <video class="elementor-video" 
-                                    width="440" height="660"
-                                    src="https://styleshifter.app/wp-content/uploads/2024/03/IMG_9804.mov" 
-                                    autoPlay loop muted="muted" playsinline="" controlslist="nodownload">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* end contact-section-s3 */}
-
-            {/* start tryon-section */}
-            <section className="contact-section contact-pg-section section-padding">
-                <div className="container-1410">
-                    <div className="row">
-                        <div className="main__container">
-                            <h1>Virtual Fitting Process</h1>
-                            <TabButtons
-                                activeTab={activeTab}
-                                setActiveTab={setActiveTab}
-                                vtoData={vtoData}
-                            />
-                            <div className="tab__container ">
-                                <div className="tab__content d-flex">
-                                    <p> {vtoData[activeTab].fact}</p>
-                                    { activeTab==0 &&
-                                        <>
-                                            < ReactImagePickerEditor
-                                                config={config2}
-                                                imageSrcProp={model}
-                                                imageChanged={(newDataUri) => { setModel(newDataUri) }} 
-                                                />
-                                        </>
-                                        
-                                    }
-
-                                    { activeTab==1 &&                                       
-                                        <>
-                                            <Select 
-                                                options={garmentOptions}
-                                                placeholder='Upper'
-                                                onChange={(values) => setSelectedGarmentType(values[0].label)} />
-                                            { selectedGarmentType=="Lower" &&
-                                                <>
-                                                    <Select 
-                                                    options={lowerSubOptions}
-                                                    placeholder='Select SubCategoryLower...'
-                                                    className='sub-select'
-                                                    required='True'
-                                                    onChange={(values) => setSelectedSubGarmentType(values[0].label)} />
-                                                </>
-                                            }
-                                            { selectedGarmentType=="Dress" &&
-                                                <>
-                                                    <Select 
-                                                    options={dressSubOptions}
-                                                    placeholder='Select SubCategoryDress...'
-                                                    className='sub-select'
-                                                    onChange={(values) => setSelectedSubGarmentType(values[0].label)} />
-                                                </>
-                                            }
-                                            
-                                            < ReactImagePickerEditor
-                                                config={config2}
-                                                imageSrcProp={garment}
-                                                imageChanged={(newDataUri) => { setGarment(newDataUri) }} 
-                                                />
-                                        </>
-                                    }
-                                    { activeTab==2 && 
-                                        <div className="d-flex flex-column text-center w-100">
-                                            <TryOnImages 
-                                                modelType={selectedModelType} 
-                                                model={model} 
-                                                garmentType={selectedGarmentType}
-                                                subgarmentType={selectedSubGarmentType} 
-                                                garment={garment}
-                                                onData={handleVtoData} 
-                                                vtoImage={resultState}
-                                            />
-                                            <div className="d-flex text-center w-100">
-                                                <img src={model? model : "/assets/images/try-on/3.jpg"} alt="Pet" />
-                                                <img src={resultState? `data:image/png;base64,${resultState}`: "/assets/images/try-on/3.jpg"} alt="Pet" />
-                                            </div>
-                                        </div>
-                                    }
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* end contact-section-s3 */}
-
-            <Instagram/>
-            <Footer/>
+            
+            <VtoBlock/>
+            
+            <RecentProducts />
         </Fragment>
     );
 }
