@@ -20,7 +20,7 @@ function Navbar({options}) {
                         <NavLink to="/">Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/virtualfitting-new" activeClassName="current-menu-item">Eugenie</NavLink>
+                        <NavLink to="/yourfitting" activeClassName="current-menu-item">Yourfitting</NavLink>
                     </li>
                 </ul>
             </div>

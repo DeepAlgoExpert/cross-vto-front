@@ -162,7 +162,7 @@ function App() {
                             <MyAccount options={options}/>
                         </Route>
 
-                        <Route exact path="/virtualfitting-new">
+                        <Route exact path="/yourfitting">
                             <VirtualTryOnNew options={options}/>
                         </Route>
 

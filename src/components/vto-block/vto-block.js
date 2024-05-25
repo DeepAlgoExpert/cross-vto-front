@@ -191,11 +191,19 @@ function FeaturedProducts() {
                                 </div>
                                 <div className="grid">
                                     <div className="img-holder">
-                                        <a href="#"><img loading="lazy" src={process.env.PUBLIC_URL + "/assets/images/vto/lower/img-9.png"} alt=""/></a>
+                                        <img src={resultState? `data:image/png;base64,${resultState}`: "/assets/images/vto/lower/img-9.png"} alt="" />
                                     </div>
                                     <div className="caption">
                                         <h3>After</h3>
-                                        <TryOnImages/>
+                                        <TryOnImages 
+                                                modelType={selectedModelType} 
+                                                model={model} 
+                                                garmentType={selectedGarmentType}
+                                                subgarmentType={selectedSubGarmentType} 
+                                                garment={garment}
+                                                onData={handleVtoData} 
+                                                vtoImage={resultState}
+                                            />
                                     </div>
                                 </div>
      
