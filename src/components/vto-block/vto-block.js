@@ -191,7 +191,7 @@ function FeaturedProducts() {
                                 </div>
                                 <div className="grid">
                                     <div className="img-holder">
-                                        <img src={resultState? `data:image/png;base64,${resultState}`: "/assets/images/vto/lower/img-9.png"} alt="" />
+                                        <img src={resultState? `data:image/png;base64,${resultState}`: "/assets/images/vto/lower/3.jpg"} alt="" />
                                     </div>
                                     <div className="caption">
                                         <h3>After</h3>
