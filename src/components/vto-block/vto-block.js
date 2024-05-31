@@ -218,7 +218,7 @@ function FeaturedProducts() {
                                                 <>
                                                     <Select 
                                                     options={lowerSubOptions}
-                                                    placeholder='Select SubCategoryUpper...'
+                                                    placeholder='Select SubCategoryLower...'
                                                     className='sub-select'
                                                     required='True'
                                                     onChange={(values) => setSelectedSubGarmentType(values[0].label)} />
@@ -228,7 +228,7 @@ function FeaturedProducts() {
                                             <>
                                                 <Select 
                                                 options={upperSubOptions}
-                                                placeholder='Select SubCategoryDress...'
+                                                placeholder='Select SubCategoryUpper...'
                                                 className='sub-select'
                                                 onChange={(values) => setSelectedSubGarmentType(values[0].label)} />
                                             </>
