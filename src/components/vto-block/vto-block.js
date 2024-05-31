@@ -218,7 +218,7 @@ function FeaturedProducts() {
                                                 <>
                                                     <Select 
                                                     options={lowerSubOptions}
-                                                    placeholder='Select SubCategoryLower...'
+                                                    placeholder='Select SubCategoryUpper...'
                                                     className='sub-select'
                                                     required='True'
                                                     onChange={(values) => setSelectedSubGarmentType(values[0].label)} />
