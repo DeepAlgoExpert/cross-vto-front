@@ -56,6 +56,9 @@ class FileUploadService {
         garmentType = 'upper_body';
     }
 
+    if (subgarmentType == "Others...")
+      subgarmentType = ''
+
     return https.post("/virtual-fit", {
       headers: {
         "Content-Type": "multipart/form-data",

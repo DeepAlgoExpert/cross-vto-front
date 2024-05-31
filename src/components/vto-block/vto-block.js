@@ -44,6 +44,33 @@ function FeaturedProducts() {
         }
     ];
 
+    const upperSubOptions = [
+      {
+        value: 1,
+        label: 'T-Shirts'
+      },
+      {
+        value: 2,
+        label: 'Shirts'
+      },
+      {
+        value: 3,
+        label: 'Blouses'
+      },
+      {
+        value: 4,
+        label: 'Sweaters'
+      },
+      {
+        value: 5,
+        label: 'Jackets'
+      },
+      {
+        value: 6,
+        label: 'Others...'
+      }
+  ];
+
     const lowerSubOptions = [
         {
           value: 1,
@@ -182,6 +209,25 @@ function FeaturedProducts() {
                                             <>
                                                 <Select 
                                                 options={dressSubOptions}
+                                                placeholder='Select SubCategoryDress...'
+                                                className='sub-select'
+                                                onChange={(values) => setSelectedSubGarmentType(values[0].label)} />
+                                            </>
+                                        }
+                                        { selectedGarmentType=="Lower" &&
+                                                <>
+                                                    <Select 
+                                                    options={lowerSubOptions}
+                                                    placeholder='Select SubCategoryLower...'
+                                                    className='sub-select'
+                                                    required='True'
+                                                    onChange={(values) => setSelectedSubGarmentType(values[0].label)} />
+                                                </>
+                                        }
+                                        { selectedGarmentType=="Upper" &&
+                                            <>
+                                                <Select 
+                                                options={upperSubOptions}
                                                 placeholder='Select SubCategoryDress...'
                                                 className='sub-select'
                                                 onChange={(values) => setSelectedSubGarmentType(values[0].label)} />

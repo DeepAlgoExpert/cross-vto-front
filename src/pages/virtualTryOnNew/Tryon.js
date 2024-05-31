@@ -55,6 +55,33 @@ function VirtualFittingRoom({ options }) {
         }
     ];
 
+    const upperSubOptions = [
+      {
+        value: 1,
+        label: 'T-Shirts'
+      },
+      {
+        value: 2,
+        label: 'Shirts'
+      },
+      {
+        value: 3,
+        label: 'Blouses'
+      },
+      {
+        value: 4,
+        label: 'Sweaters'
+      },
+      {
+        value: 5,
+        label: 'Jackets'
+      },
+      {
+        value: 6,
+        label: 'Others...'
+      }
+  ];
+
     const lowerSubOptions = [
         {
           value: 1,
