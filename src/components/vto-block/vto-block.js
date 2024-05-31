@@ -214,16 +214,6 @@ function FeaturedProducts() {
                                                 onChange={(values) => setSelectedSubGarmentType(values[0].label)} />
                                             </>
                                         }
-                                        { selectedGarmentType=="Lower" &&
-                                                <>
-                                                    <Select 
-                                                    options={lowerSubOptions}
-                                                    placeholder='Select SubCategoryLower...'
-                                                    className='sub-select'
-                                                    required='True'
-                                                    onChange={(values) => setSelectedSubGarmentType(values[0].label)} />
-                                                </>
-                                        }
                                         { selectedGarmentType=="Upper" &&
                                             <>
                                                 <Select 
