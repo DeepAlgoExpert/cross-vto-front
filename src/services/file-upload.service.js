@@ -56,7 +56,7 @@ class FileUploadService {
         garmentType = 'upper_body';
     }
 
-    if (subgarmentType == "Others...")
+    if (subgarmentType == "Others..." || subgarmentType =='')
       subgarmentType = ''
 
     return https.post("/virtual-fit", {
