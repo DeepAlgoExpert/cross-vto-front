@@ -141,7 +141,7 @@ function VirtualFittingRoom({ options }) {
                     </div>
                 </div>
             </section>
-            {/* end contact-section-s3 */}
+            {/* end video-section-s3 */}
 
             {/* start tryon-section */}
             <section className="contact-section contact-pg-section section-padding">

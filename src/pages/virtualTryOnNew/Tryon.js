@@ -186,6 +186,23 @@ function VirtualFittingRoom({ options }) {
         <Fragment>
             <Header options={options} />
             
+            {/* start video-section */}
+            <section className="hero-1">
+                <div className="container-1610">
+                    <div className="row">
+                        <div className="col-lg-12">
+                          <div class="video-container">
+                            <video class="video" 
+                                src="/assets/videos/Homepage_V02_HD.mp4" 
+                                autoPlay loop muted="muted" playsinline="" controlslist="nodownload">
+                            </video>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* end video-section-s3 */}
+
             <VtoBlock/>
             
             <RecentProducts />
